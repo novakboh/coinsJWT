@@ -1,4 +1,4 @@
-const Coin = require('./models/coin');
+const mongoose = require('mongoose');
 const express = require('express');
 const app = express();
 const authRoutes = require('./routes/auth');

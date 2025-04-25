@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const verifyToken = require('../middleware/authMiddleware');
+const Coin = require('../models/coin');
 
 router.get('/', async (req, res) => {
     const coins = await Coin.find();
